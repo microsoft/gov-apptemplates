@@ -1,14 +1,6 @@
 # Project
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
-
-As the maintainer of this project, please make a few updates:
-
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+The Government Application Starter Templates repository provides a library of modular, prebuilt Power Platform and Dynamics 365 applications designed specifically for government agencies. Each template is built on the standardized [Government Dataverse Data Models](https://github.com/microsoft/gov-datamodels), ensuring data consistency and interoperability across solutions. These ready-to-personalize modules deliver core starting funcionality for mission-focused services such as permitting, case management, asset tracking, grants management, and more. By using these templates, agencies can jump-start solution delivery, reduce development time, and focus resources on tailoring workflows, user experiences, and integrations to meet their unique operational needs.
 
 ## Contributing
 
