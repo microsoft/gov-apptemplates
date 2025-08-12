@@ -52,7 +52,7 @@ Here’s a short, clear legal disclaimer you can drop into your READMEs or GitHu
 
 ---
 
-# ⚖️ Support 
+## ⚖️ Support 
 
 The modules in this repository are provided **“as is”** without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement.
 
