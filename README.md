@@ -47,3 +47,17 @@ trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
+
+Here’s a short, clear legal disclaimer you can drop into your READMEs or GitHub Pages site:
+
+---
+
+# ⚖️ Support 
+
+The modules in this repository are provided **“as is”** without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement.
+
+As open source, these solutions are **not** official Microsoft products and are **not** covered by any Microsoft support agreement or service-level commitment. No guarantee is made regarding the accuracy, completeness, performance, or continued availability of these modules.
+
+Use of these modules is at your own risk. You are responsible for evaluating their suitability for your environment, performing necessary security reviews, and ensuring compliance with applicable laws, regulations, and policies.
+
+By installing or using these modules, you acknowledge that no obligation exists for Microsoft or the repository maintainers to provide support, updates, or maintenance, and that any assistance provided is voluntary and without guarantee.
