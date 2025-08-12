@@ -2,7 +2,7 @@
 
 The Government Application Starter Templates repository provides a library of modular, prebuilt Power Platform and Dynamics 365 applications designed specifically for government agencies. Each template is built on the standardized [Government Dataverse Data Models](https://github.com/microsoft/gov-datamodels), ensuring data consistency and interoperability across solutions. These ready-to-personalize modules deliver core starting funcionality for mission-focused services such as permitting, case management, asset tracking, grants management, and more. By using these templates, agencies can jump-start solution delivery, reduce development time, and focus resources on tailoring workflows, user experiences, and integrations to meet their unique operational needs.
 
-# Co-Designed with Goverment App Data Models
+## 🎯 Co-Designed with Government App Data Models
 
 This repository, along with the [Government Data Models](https://github.com/microsoft/gov-datamodels)  repository, are designed to work together as a modular, layered foundation for building government solutions on Microsoft Dataverse and the Power Platform.
 
@@ -24,7 +24,7 @@ Keeping these in separate repositories offers several benefits:
 
 By using both together, agencies get a consistent, governed data layer plus a set of deployable, mission-focused apps that can be adapted quickly and maintained over time.
 
-## Contributing
+## 🛠️ Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
@@ -40,7 +40,7 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 We are working on integrating the full unpacked solution files for a more direct contribution experience. Check back for updates for availability.
 
-## Trademarks
+## ™️ Trademarks
 
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
 trademarks or logos is subject to and must follow
