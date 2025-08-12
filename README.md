@@ -48,9 +48,18 @@ trademarks or logos is subject to and must follow
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
 
-Here’s a short, clear legal disclaimer you can drop into your READMEs or GitHub Pages site:
+## 📌 Intended Use
 
----
+The modules in this repository are provided as **reference implementations** for learning, experimentation, and as a starting point for building production-ready applications.
+
+They are **not** designed to be deployed directly to a production environment without additional development, testing, and validation. Any organization planning to use these modules in production should:
+
+* Adapt and extend the solutions to meet specific business and technical requirements
+* Integrate them into the organization’s **Application Lifecycle Management (ALM)** processes
+* Perform full **security, compliance, and performance reviews**
+* Apply updates, fixes, and enhancements as needed
+
+These modules are meant to accelerate solution design and reduce initial build time, but the responsibility for ensuring readiness, compliance, and ongoing maintenance lies with the implementing organization.
 
 ## ⚖️ Support 
 
