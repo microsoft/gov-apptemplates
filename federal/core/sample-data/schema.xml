@@ -1,0 +1,254 @@
+<entities >
+  <entity name="contact" displayname="Person" etc="2" primaryidfield="contactid" primarynamefield="fullname" disableplugins="false">
+    <fields>
+      <field displayname="Person" name="contactid" type="guid" primaryKey="true" />
+      <field displayname="Email" name="emailaddress1" type="string" />
+      <field displayname="First Name" name="firstname" type="string" />
+      <field displayname="Last Name" name="lastname" type="string" />
+      <field displayname="Business Phone" name="telephone1" type="string" />
+      <field displayname="Job Title" name="jobtitle" type="string" />
+    </fields>
+  </entity>
+  <entity name="govcdm_country" displayname="Country" etc="10406" primaryidfield="govcdm_countryid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Abbreviation" name="govcdm_abbreviation" type="string" customfield="true" />
+      <field displayname="Country" name="govcdm_countryid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+    </fields>
+  </entity>
+  <entity name="govcdm_stateorprovince" displayname="State or Province" etc="10418" primaryidfield="govcdm_stateorprovinceid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="State or Province" name="govcdm_stateorprovinceid" type="guid" primaryKey="true" />
+      <field displayname="Abbreviation" name="govcdm_abbreviation" type="string" customfield="true" />
+      <field displayname="Country" name="govcdm_country" type="entityreference" lookupType="govcdm_country" customfield="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_location" displayname="Location" etc="10412" primaryidfield="govcdm_locationid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Abbreviation" name="govcdm_abbreviation" type="string" customfield="true" />
+      <field displayname="Address Line 1" name="govcdm_addressline1" type="string" customfield="true" />
+      <field displayname="Address Line 2" name="govcdm_addressline2" type="string" customfield="true" />
+      <field displayname="City" name="govcdm_city" type="string" customfield="true" />
+      <field displayname="Location" name="govcdm_locationid" type="guid" primaryKey="true" />
+      <field displayname="Main Phone" name="govcdm_mainphone" type="string" customfield="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Parent Location" name="govcdm_parentlocation" type="entityreference" lookupType="govcdm_location" customfield="true" />
+      <field displayname="Postal Code" name="govcdm_postalcode" type="string" customfield="true" />
+      <field displayname="State or Province" name="govcdm_stateorprovince" type="entityreference" lookupType="govcdm_stateorprovince" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+    </fields>
+  </entity>
+  <entity name="govcdm_product" displayname="Product" etc="10423" primaryidfield="govcdm_productid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Product" name="govcdm_productid" type="guid" primaryKey="true" />
+      <field displayname="Description" name="govcdm_description" type="string" customfield="true" />
+      <field displayname="Manufacturer" name="govcdm_manufacturer" type="entityreference" lookupType="account" customfield="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Parent Product" name="govcdm_parentproduct" type="entityreference" lookupType="govcdm_product" customfield="true" />
+      <field displayname="Product Number" name="govcdm_productnumber" type="string" customfield="true" />
+      <field displayname="URL" name="govcdm_url" type="string" customfield="true" />
+      <field displayname="Unit Price" name="govcdm_unitprice" type="money" customfield="true" />
+      <field displayname="Unit of Issue" name="govcdm_unitofissue" type="optionsetvalue" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_organizationunittype" displayname="Organization Unit Type" etc="10440" primaryidfield="govcdm_organizationunittypeid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Organization Unit Type" name="govcdm_organizationunittypeid" type="guid" primaryKey="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_organizationunit" displayname="Organization Unit" etc="10439" primaryidfield="govcdm_organizationunitid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Abbreviation" name="govcdm_abbreviation" type="string" customfield="true" />
+      <field displayname="Description" name="govcdm_description" type="string" customfield="true" />
+      <field displayname="Managed By" name="govcdm_managedby" type="entityreference" lookupType="contact" customfield="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Org Code" name="govcdm_orgcode" type="string" customfield="true" />
+      <field displayname="Organization Unit" name="govcdm_organizationunitid" type="guid" primaryKey="true" />
+      <field displayname="Organization Unit Type" name="govcdm_organizationunittype" type="entityreference" lookupType="govcdm_organizationunittype" customfield="true" />
+      <field displayname="Parent Organization Unit" name="govcdm_parentorganizationunit" type="entityreference" lookupType="govcdm_organizationunit" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_complianceframework" displayname="Compliance Framework" etc="10807" primaryidfield="govcdm_complianceframeworkid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Compliance Framework" name="govcdm_complianceframeworkid" type="guid" primaryKey="true" />
+      <field displayname="Description" name="govcdm_description" type="string" customfield="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Title" name="govcdm_title" type="string" customfield="true" />
+      <field displayname="URL" name="govcdm_url" type="string" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_complianceframeworkcategory" displayname="Compliance Framework Category" etc="10813" primaryidfield="govcdm_complianceframeworkcategoryid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Compliance Framework" name="govcdm_complianceframework" type="entityreference" lookupType="govcdm_complianceframework" customfield="true" />
+      <field displayname="Compliance Framework Category" name="govcdm_complianceframeworkcategoryid" type="guid" primaryKey="true" />
+      <field displayname="Description" name="govcdm_description" type="string" customfield="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_compliancerequirement" displayname="Compliance Requirement" etc="10808" primaryidfield="govcdm_compliancerequirementid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Additional Guidelines" name="govcdm_additionalguidelines" type="string" customfield="true" />
+      <field displayname="Applicable When" name="govcdm_applicablewhen" type="string" customfield="true" />
+      <field displayname="Compliance Framework" name="govcdm_complianceframework" type="entityreference" lookupType="govcdm_complianceframework" customfield="true" />
+      <field displayname="Compliance Framework Category" name="govcdm_complianceframeworkcategory" type="entityreference" lookupType="govcdm_complianceframeworkcategory" customfield="true" />
+      <field displayname="Compliance Requirement" name="govcdm_compliancerequirementid" type="guid" primaryKey="true" />
+      <field displayname="Description" name="govcdm_description" type="string" customfield="true" />
+      <field displayname="Details" name="govcdm_details" type="string" customfield="true" />
+      <field displayname="Effective From Date" name="govcdm_effectivefromdate" type="datetime" customfield="true" />
+      <field displayname="Effective To Date" name="govcdm_effectivetodate" type="datetime" customfield="true" />
+      <field displayname="Expiration / Review Date" name="govcdm_expirationreviewdate" type="datetime" customfield="true" />
+      <field displayname="Moniker" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Non-Compliance Risk Level" name="govcdm_noncompliancerisklevel" type="optionsetvalue" customfield="true" />
+      <field displayname="Parent Compliance Requirement" name="govcdm_parentcompliancerequirement" type="entityreference" lookupType="govcdm_compliancerequirement" customfield="true" />
+      <field displayname="Title" name="govcdm_title" type="string" customfield="true" />
+      <field displayname="URL" name="govcdm_url" type="string" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_legalauthority" displayname="Legal Authority" etc="10700" primaryidfield="govcdm_legalauthorityid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Citation" name="govcdm_citation" type="string" customfield="true" />
+      <field displayname="Disposition Notes" name="govcdm_dispositionnotes" type="string" customfield="true" />
+      <field displayname="Document" name="govcdm_document" type="entityreference" lookupType="govcdm_document" customfield="true" />
+      <field displayname="Document Number" name="govcdm_documentnumber" type="string" customfield="true" />
+      <field displayname="Effective Date" name="govcdm_effectivedate" type="datetime" customfield="true" />
+      <field displayname="Executive Order Number" name="govcdm_executiveordernumber" type="string" customfield="true" />
+      <field displayname="Expiration Date" name="govcdm_expirationdate" type="datetime" customfield="true" />
+      <field displayname="Full Text URL" name="govcdm_fulltexturl" type="string" customfield="true" />
+      <field displayname="Issuing Body" name="govcdm_issuingbody" type="entityreference" lookupType="account" customfield="true" />
+      <field displayname="Jurisdiction Level" name="govcdm_jurisdictionlevel" type="optionsetvalue" customfield="true" />
+      <field displayname="Legal Authority" name="govcdm_legalauthorityid" type="guid" primaryKey="true" />
+      <field displayname="Legal Authority Status" name="govcdm_legalauthoritystatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Legal Authority Type" name="govcdm_legalauthoritytype" type="optionsetvalue" customfield="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Public Doc URL" name="govcdm_publicdocurl" type="string" customfield="true" />
+      <field displayname="Publication Date" name="govcdm_publicationdate" type="datetime" customfield="true" />
+      <field displayname="Signing Date" name="govcdm_signingdate" type="datetime" customfield="true" />
+      <field displayname="Summary" name="govcdm_summary" type="string" customfield="true" />
+      <field displayname="Tags" name="govcdm_tags" type="string" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_personneltype" displayname="Personnel Type" etc="10568" primaryidfield="govcdm_personneltypeid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Personnel Type" name="govcdm_personneltypeid" type="guid" primaryKey="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_clearancelevel" displayname="Clearance Level" etc="10546" primaryidfield="govcdm_clearancelevelid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Abbreviation" name="govcdm_abbreviation" type="string" customfield="true" />
+      <field displayname="Clearance Level" name="govcdm_clearancelevelid" type="guid" primaryKey="true" />
+      <field displayname="Code" name="govcdm_code" type="string" customfield="true" />
+      <field displayname="Description" name="govcdm_description" type="string" customfield="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_graderank" displayname="Grade-Rank" etc="10556" primaryidfield="govcdm_graderankid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Pay Grade" name="govcdm_paygrade" type="entityreference" lookupType="govcdm_paygrade" customfield="true" />
+      <field displayname="Abbreviation" name="govcdm_abbreviation" type="string" customfield="true" />
+      <field displayname="Description" name="govcdm_description" type="string" customfield="true" />
+      <field displayname="Grade-Rank" name="govcdm_graderankid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_paygrade" displayname="Pay Grade" etc="10567" primaryidfield="govcdm_paygradeid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Pay Grade" name="govcdm_paygradeid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_jobseries" displayname="Job Series" etc="10558" primaryidfield="govcdm_jobseriesid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Description" name="govcdm_description" type="string" customfield="true" />
+      <field displayname="Job Series" name="govcdm_jobseriesid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Series Number" name="govcdm_seriesnumber" type="string" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_fiscalperiod" displayname="Fiscal Period" etc="10555" primaryidfield="govcdm_fiscalperiodid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="End Date" name="govcdm_enddate" type="datetime" customfield="true" />
+      <field displayname="Fiscal Period" name="govcdm_fiscalperiodid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Start Date" name="govcdm_startdate" type="datetime" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_privacyconsent" displayname="Privacy Consent" etc="10569" primaryidfield="govcdm_privacyconsentid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Consent For" name="govcdm_consentfor" type="string" customfield="true" />
+      <field displayname="Consent Signed On" name="govcdm_consentsignedon" type="datetime" customfield="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Privacy Consent" name="govcdm_privacyconsentid" type="guid" primaryKey="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_analysis" displayname="Analysis" etc="10545" primaryidfield="govcdm_analysisid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Action Status" name="govcdm_actionstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Analysis" name="govcdm_analysisid" type="guid" primaryKey="true" />
+      <field displayname="Analysis From Date" name="govcdm_analysisfromdate" type="datetime" customfield="true" />
+      <field displayname="Analysis To Date" name="govcdm_analysistodate" type="datetime" customfield="true" />
+      <field displayname="Assessment POC" name="govcdm_assessmentpoc" type="entityreference" lookupType="contact" customfield="true" />
+      <field displayname="Details" name="govcdm_details" type="string" customfield="true" />
+      <field displayname="Legal Authority" name="govcdm_legalauthority" type="entityreference" lookupType="govcdm_legalauthority" customfield="true" />
+      <field displayname="Organization Unit" name="govcdm_organizationunit" type="entityreference" lookupType="govcdm_organizationunit" customfield="true" />
+      <field displayname="Summary" name="govcdm_summary" type="string" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_impact" displayname="Impact" etc="10557" primaryidfield="govcdm_impactid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Action Status" name="govcdm_actionstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Analysis" name="govcdm_analysis" type="entityreference" lookupType="govcdm_analysis" customfield="true" />
+      <field displayname="Description" name="govcdm_description" type="string" customfield="true" />
+      <field displayname="Evidence of Mitigation" name="govcdm_evidenceofmitigation" type="string" customfield="true" />
+      <field displayname="General Category" name="govcdm_generalcategory" type="optionsetvalue" customfield="true" />
+      <field displayname="Identification Date" name="govcdm_identificationdate" type="datetime" customfield="true" />
+      <field displayname="Impact" name="govcdm_impactid" type="guid" primaryKey="true" />
+      <field displayname="Impact Level" name="govcdm_impactlevel" type="optionsetvalue" customfield="true" />
+      <field displayname="Impact Likelihood" name="govcdm_impactlikelihood" type="optionsetvalue" customfield="true" />
+      <field displayname="Impact Relevance" name="govcdm_impactrelevance" type="optionsetvalue" customfield="true" />
+      <field displayname="Legal Authority" name="govcdm_legalauthority" type="entityreference" lookupType="govcdm_legalauthority" customfield="true" />
+      <field displayname="Mitigation Plan" name="govcdm_mitigationplan" type="string" customfield="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Organization Unit" name="govcdm_organizationunit" type="entityreference" lookupType="govcdm_organizationunit" customfield="true" />
+      <field displayname="Parent Impact" name="govcdm_parentimpact" type="entityreference" lookupType="govcdm_impact" customfield="true" />
+      <field displayname="Review Date" name="govcdm_reviewdate" type="datetime" customfield="true" />
+      <field displayname="Target Mitigation Date" name="govcdm_targetmitigationdate" type="datetime" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_riskitem" displayname="Risk Item" etc="10572" primaryidfield="govcdm_riskitemid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Action Status" name="govcdm_actionstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Analysis" name="govcdm_analysis" type="entityreference" lookupType="govcdm_analysis" customfield="true" />
+      <field displayname="Description" name="govcdm_description" type="string" customfield="true" />
+      <field displayname="Evidence of Mitigation" name="govcdm_evidenceofmitigation" type="string" customfield="true" />
+      <field displayname="Identification Date" name="govcdm_identificationdate" type="datetime" customfield="true" />
+      <field displayname="Impact Description" name="govcdm_impactdescription" type="string" customfield="true" />
+      <field displayname="Legal Authority" name="govcdm_legalauthority" type="entityreference" lookupType="govcdm_legalauthority" customfield="true" />
+      <field displayname="Mitigation Plan" name="govcdm_mitigationplan" type="string" customfield="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Organization Unit" name="govcdm_organizationunit" type="entityreference" lookupType="govcdm_organizationunit" customfield="true" />
+      <field displayname="Parent Risk Item" name="govcdm_parentriskitem" type="entityreference" lookupType="govcdm_riskitem" customfield="true" />
+      <field displayname="Review Date" name="govcdm_reviewdate" type="datetime" customfield="true" />
+      <field displayname="Risk General Category" name="govcdm_riskgeneralcategory" type="optionsetvalue" customfield="true" />
+      <field displayname="Risk Item" name="govcdm_riskitemid" type="guid" primaryKey="true" />
+      <field displayname="Risk Level" name="govcdm_risklevel" type="optionsetvalue" customfield="true" />
+      <field displayname="Risk Likelihood" name="govcdm_risklikelihood" type="optionsetvalue" customfield="true" />
+      <field displayname="Target Mitigation Date" name="govcdm_targetmitigationdate" type="datetime" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_personalinformationtype" displayname="Personal Information Type" etc="10728" primaryidfield="govcdm_personalinformationtypeid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Parent Type" name="govcdm_parenttype" type="entityreference" lookupType="govcdm_personalinformationtype" customfield="true" />
+      <field displayname="Personal Information Type" name="govcdm_personalinformationtypeid" type="guid" primaryKey="true" />
+    </fields>
+  </entity>
+</entities>
