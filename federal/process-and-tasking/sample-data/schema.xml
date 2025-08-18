@@ -1,0 +1,173 @@
+<entities >
+  <entity name="govcdm_processstep" displayname="Process Step" etc="10390" primaryidfield="govcdm_processstepid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Details" name="govcdm_details" type="string" customfield="true" />
+      <field displayname="Process Step" name="govcdm_processstepid" type="guid" primaryKey="true" />
+      <field displayname="Process Step Type" name="govcdm_processsteptype" type="optionsetvalue" customfield="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Parent Process Step" name="govcdm_parentprocessstep" type="entityreference" lookupType="govcdm_processstep" customfield="true" />
+      <field displayname="Assign To" name="govcdm_assignto" type="optionsetvalue" customfield="true" />
+      <field displayname="Data Entry Step" name="govcdm_dataentrystep" type="entityreference" lookupType="govcdm_dataentrystep" customfield="true" />
+      <field displayname="Process Step Order" name="govcdm_processsteporder" type="number" customfield="true" />
+      <field displayname="Enable Submission Info" name="govcdm_enablesubmissioninfo" type="optionsetvalue" customfield="true" />
+      <field displayname="Automation Team ID" name="msfed_automationteamid" type="string" customfield="true" />
+      <field displayname="Automation Type" name="msfed_automationtype" type="optionsetvalue" customfield="true" />
+      <field displayname="Collaboration Space" name="govcdm_collaborationspace" type="entityreference" lookupType="govcdm_collaborationspace" customfield="true" />
+      <field displayname="Content Template" name="govcdm_contenttemplate" type="entityreference" lookupType="govcdm_contenttemplate" customfield="true" />
+      <field displayname="Data Form" name="govcdm_dataform" type="entityreference" lookupType="govcdm_dataform" customfield="true" />
+      <field displayname="Due Date Calc Method" name="govcdm_duedatecalcmethod" type="optionsetvalue" customfield="true" />
+      <field displayname="Due Date Offset" name="govcdm_duedateoffset" type="number" customfield="true" />
+      <field displayname="Main Process Step" name="govcdm_mainprocessstep" type="entityreference" lookupType="govcdm_processstep" customfield="true" />
+      <field displayname="Primary Process Step" name="govcdm_primaryprocessstep" type="entityreference" lookupType="govcdm_processstep" customfield="true" />
+      <field displayname="Primary Record Display Field" name="govcdm_primaryrecorddisplayfield" type="string" customfield="true" />
+      <field displayname="Sub Step Processing Order" name="govcdm_substepprocessingorder" type="optionsetvalue" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_dataentrystep" displayname="Data Entry Step" etc="10758" primaryidfield="govcdm_dataentrystepid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Parent Data Entry Step" name="govcdm_parentdataentrystep" type="entityreference" lookupType="govcdm_dataentrystep" customfield="true" />
+      <field displayname="Valid for Create" name="govcdm_validforcreate" type="optionsetvalue" customfield="true" />
+      <field displayname="Data Entry Step" name="govcdm_dataentrystepid" type="guid" primaryKey="true" />
+      <field displayname="Data Entry Step Order" name="govcdm_dataentrysteporder" type="number" customfield="true" />
+      <field displayname="Data Entry Type" name="govcdm_dataentrytype" type="optionsetvalue" customfield="true" />
+      <field displayname="Description" name="govcdm_description" type="string" customfield="true" />
+      <field displayname="Form Applies to Schema Name" name="govcdm_formappliestoschemaname" type="string" customfield="true" />
+      <field displayname="Form Base URL" name="govcdm_formbaseurl" type="string" customfield="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="App Name" name="govcdm_appname" type="string" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_actionitem" displayname="Action Item" etc="10677" primaryidfield="activityid" primarynamefield="subject" disableplugins="false">
+    <fields>
+      <field displayname="Action Category" name="govcdm_actioncategory" type="entityreference" lookupType="govcdm_actioncategory" customfield="true" />
+      <field displayname="Action Status" name="govcdm_actionstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Action Subcategory" name="govcdm_actionsubcategory" type="entityreference" lookupType="govcdm_actioncategory" customfield="true" />
+      <field displayname="Action Type" name="govcdm_actiontype" type="optionsetvalue" customfield="true" />
+      <field displayname="Activity" name="activityid" type="guid" primaryKey="true" />
+      <field displayname="Activity Status" name="statecode" type="state" />
+      <field displayname="Activity Type" name="activitytypecode" type="string" />
+      <field displayname="Actual Duration" name="actualdurationminutes" type="number" />
+      <field displayname="Actual End" name="actualend" type="datetime" />
+      <field displayname="Actual Start" name="actualstart" type="datetime" />
+      <field displayname="Automation Response" name="govcdm_automationresponse" type="string" customfield="true" />
+      <field displayname="Automation Triggered Date Time" name="govcdm_automationtriggereddatetime" type="datetime" customfield="true" />
+      <field displayname="Collaboration URL" name="govcdm_collaborationurl" type="string" customfield="true" />
+      <field displayname="Data Entry Response" name="govcdm_dataentryresponse" type="entityreference" lookupType="govcdm_dataentryresponse" customfield="true" />
+      <field displayname="Delivery Priority" name="deliveryprioritycode" type="optionsetvalue" />
+      <field displayname="Description" name="description" type="string" />
+      <field displayname="Details" name="govcdm_details" type="string" customfield="true" />
+      <field displayname="Document" name="govcdm_document" type="entityreference" lookupType="govcdm_document" customfield="true" />
+      <field displayname="Due Date" name="scheduledend" type="datetime" />
+      <field displayname="Is Paused" name="govcdm_ispaused" type="optionsetvalue" customfield="true" />
+      <field displayname="Originator Comments" name="govcdm_originatorcomments" type="string" customfield="true" />
+      <field displayname="Parent Action Item" name="govcdm_parentactionitem" type="entityreference" lookupType="govcdm_actionitem" customfield="true" />
+      <field displayname="Priority" name="prioritycode" type="optionsetvalue" />
+      <field displayname="Process Step" name="govcdm_processstep" type="entityreference" lookupType="govcdm_processstep" customfield="true" />
+      <field displayname="Scheduled Duration" name="scheduleddurationminutes" type="number" />
+      <field displayname="Start Date" name="scheduledstart" type="datetime" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Subject" name="subject" type="string" />
+      <field displayname="Tags" name="govcdm_tags" type="string" customfield="true" />
+      <field displayname="Virtual Regarding ID" name="govcdm_virtualregardingid" type="string" customfield="true" />
+      <field displayname="Virtual Regarding Type" name="govcdm_virtualregardingtype" type="string" customfield="true" />
+      <field displayname="Date Sent" name="senton" type="datetime" />
+      <field displayname="Next Steps" name="govcdm_nextsteps" type="string" customfield="true" />
+      <field displayname="Originator (Person)" name="govcdm_originatorperson" type="entityreference" lookupType="contact" customfield="true" />
+      <field displayname="(Deprecated) Process Stage" name="stageid" type="guid" />
+      <field displayname="(Deprecated) Traversed Path" name="traversedpath" type="string" />
+      <field displayname="Activity Additional Parameters" name="activityadditionalparams" type="string" />
+      <field displayname="BCC" name="bcc" type="partylist" />
+      <field displayname="CC" name="cc" type="partylist" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Currency" name="transactioncurrencyid" type="entityreference" lookupType="transactioncurrency" />
+      <field displayname="Customers" name="customers" type="partylist" />
+      <field displayname="Date Created" name="createdon" type="datetime" />
+      <field displayname="Date Delivery Last Attempted" name="deliverylastattemptedon" type="datetime" />
+      <field displayname="Delay activity processing until" name="postponeactivityprocessinguntil" type="datetime" />
+      <field displayname="Exchange Item ID" name="exchangeitemid" type="string" />
+      <field displayname="Exchange Rate" name="exchangerate" type="decimal" />
+      <field displayname="Exchange WebLink" name="exchangeweblink" type="string" />
+      <field displayname="From" name="from" type="partylist" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Is Billed" name="isbilled" type="bool" />
+      <field displayname="Is Private" name="ismapiprivate" type="bool" />
+      <field displayname="Is Regular Activity" name="isregularactivity" type="bool" />
+      <field displayname="Is Workflow Created" name="isworkflowcreated" type="bool" />
+      <field displayname="Last On Hold Time" name="lastonholdtime" type="datetime" />
+      <field displayname="Last SLA applied" name="slainvokedid" type="entityreference" lookupType="sla" />
+      <field displayname="Last Updated" name="modifiedon" type="datetime" />
+      <field displayname="Left Voice Mail" name="leftvoicemail" type="bool" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="On Hold Time (Minutes)" name="onholdtime" type="number" />
+      <field displayname="Optional Attendees" name="optionalattendees" type="partylist" />
+      <field displayname="Organizer" name="organizer" type="partylist" />
+      <field displayname="Originator (User)" name="govcdm_originatoruser" type="entityreference" lookupType="systemuser" customfield="true" />
+      <field displayname="Outsource Vendors" name="partners" type="partylist" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Primary Action Item" name="govcdm_primaryactionitem" type="entityreference" lookupType="govcdm_actionitem" customfield="true" />
+      <field displayname="Process" name="processid" type="guid" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Recurring Instance Type" name="instancetypecode" type="optionsetvalue" />
+      <field displayname="Regarding" name="regardingobjectid" type="entityreference" lookupType="account|adx_invitation|contact|interactionforemail|knowledgearticle|knowledgebaserecord|mspp_adplacement|mspp_pollplacement|mspp_publishingstatetransitionrule|mspp_redirect|mspp_shortcut|mspp_website" />
+      <field displayname="Required Attendees" name="requiredattendees" type="partylist" />
+      <field displayname="Resources" name="resources" type="partylist" />
+      <field displayname="Sender's Mailbox" name="sendermailboxid" type="entityreference" lookupType="mailbox" />
+      <field displayname="Series Id" name="seriesid" type="guid" />
+      <field displayname="Signature Approval" name="govcdm_signatureapproval" type="entityreference" lookupType="govcdm_signatureapproval" customfield="true" />
+      <field displayname="SLA" name="slaid" type="entityreference" lookupType="sla" />
+      <field displayname="Social Channel" name="community" type="optionsetvalue" />
+      <field displayname="Sort Date" name="sortdate" type="datetime" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="To" name="to" type="partylist" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="govcdm_contenttemplate" displayname="Content Template" etc="10551" primaryidfield="govcdm_contenttemplateid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Content Template" name="govcdm_contenttemplateid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="SharePoint File Path" name="govcdm_sharepointfilepath" type="string" customfield="true" />
+      <field displayname="SharePoint Site" name="govcdm_sharepointsite" type="string" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_collaborationspace" displayname="Collaboration Space" etc="10578" primaryidfield="govcdm_collaborationspaceid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Action Assignment" name="govcdm_actionassignment" type="entityreference" lookupType="govcdm_actionassignment" customfield="true" />
+      <field displayname="Action Item" name="govcdm_actionitem" type="entityreference" lookupType="govcdm_actionitem" customfield="true" />
+      <field displayname="Collaboration Space" name="govcdm_collaborationspaceid" type="guid" primaryKey="true" />
+      <field displayname="Collaboration Space Type" name="govcdm_collaborationspacetype" type="optionsetvalue" customfield="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="SharePoint Folder Path" name="govcdm_sharepointfolderpath" type="string" customfield="true" />
+      <field displayname="SharePoint Site" name="govcdm_sharepointsite" type="string" customfield="true" />
+      <field displayname="Team Channel ID" name="govcdm_teamchannelid" type="string" customfield="true" />
+      <field displayname="Team Chat ID" name="govcdm_teamchatid" type="string" customfield="true" />
+      <field displayname="Team ID" name="govcdm_teamid" type="string" customfield="true" />
+      <field displayname="URL" name="govcdm_url" type="string" customfield="true" />
+      <field displayname="Virtual Record Display Field" name="govcdm_virtualrecorddisplayfield" type="string" customfield="true" />
+      <field displayname="Virtual Record ID" name="govcdm_virtualrecordid" type="string" customfield="true" />
+      <field displayname="Virtual Record Type" name="govcdm_virtualrecordtype" type="string" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="govcdm_document" displayname="Document" etc="10554" primaryidfield="govcdm_documentid" primarynamefield="govcdm_name" disableplugins="false">
+    <fields>
+      <field displayname="Approval Status" name="govcdm_approvalstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Action Assignment" name="govcdm_actionassignment" type="entityreference" lookupType="govcdm_actionassignment" customfield="true" />
+      <field displayname="Action Item" name="govcdm_actionitem" type="entityreference" lookupType="govcdm_actionitem" customfield="true" />
+      <field displayname="Content Template" name="govcdm_contenttemplate" type="entityreference" lookupType="govcdm_contenttemplate" customfield="true" />
+      <field displayname="Description" name="govcdm_description" type="string" customfield="true" />
+      <field displayname="Document" name="govcdm_documentid" type="guid" primaryKey="true" />
+      <field displayname="Document URL" name="govcdm_documenturl" type="string" customfield="true" />
+      <field displayname="Keywords" name="govcdm_keywords" type="string" customfield="true" />
+      <field displayname="Name" name="govcdm_name" type="string" customfield="true" />
+      <field displayname="Virtual Record ID" name="govcdm_virtualrecordid" type="string" customfield="true" />
+      <field displayname="Virtual Record Type" name="govcdm_virtualrecordtype" type="string" customfield="true" />
+    </fields>
+  </entity>
+</entities>
