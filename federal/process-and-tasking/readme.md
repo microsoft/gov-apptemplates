@@ -1,4 +1,4 @@
-# Process and Tasking Module
+# Process and Tasking Utility Module
 
 The **Process and Tasking** module provides a reusable framework for managing repeatable business processes, tasks, and automations across your applications. Built on the [Government Data Models](https://github.com/microsoft/gov-datamodels), this module centralizes process configurations so they can be applied consistently to any record type in your system.
 
