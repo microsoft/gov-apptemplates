@@ -1,6 +1,6 @@
 # Personnel Security Overview
 
-# Background Investigations
+## Managing Background Investigations
 
 The personnel security lifecycle begins when a Background Investigation (BI) is initiated for an individual under consideration for a sensitive position. 
 
