@@ -1,4 +1,4 @@
-site_name: Gov AppTemplates Docs
+site_name: Gov App Templates Docs
 nav:
   - Home: ../README.md
   - Core Module:
