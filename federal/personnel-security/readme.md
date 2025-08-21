@@ -10,3 +10,7 @@ Once an investigation is complete, the process transitions to **adjudication**. 
 The module also supports **Continuous Vetting (CV)**, enabling ongoing risk monitoring after a clearance is granted. CV triggers, such as foreign contacts, arrests, or financial concerns, can be logged and routed automatically to Security Officers using **Power Automate** notifications. This ensures that potential risks are identified and acted upon without waiting for the next reinvestigation cycle.
 
 All data captured in the module is fully available in **Power BI**, providing security teams and leadership with dashboards and reports that surface trends, workload distribution, and emerging risks. By combining modular data models, automated workflows, and AI-driven assistance, the Personnel Security module enables a scalable, traceable, and modern approach to safeguarding sensitive positions across government organizations.
+
+![alt text](Personnel-Security.png)
+
+
