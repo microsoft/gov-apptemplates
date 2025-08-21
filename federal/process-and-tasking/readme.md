@@ -14,3 +14,4 @@ Key features include:
 
 By combining these capabilities, the module helps standardize implementation plans, increase accountability, and provide visibility into process progress across teams. This turns apps into **actionable, process-driven tools** that support mission outcomes with efficiency and repeatability.
 
+![alt text](Process-and-Tasking.png)
