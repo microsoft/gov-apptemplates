@@ -2,6 +2,36 @@
 
 This page describes the model-driven app functionality in the Core module.
 
+## Table of Contents
+- [Overview](#overview)
+- [Walkthrough](#walkthrough)
+- [People](#people)
+  - [Personnel Types](#personnel-types)
+  - [Organization Units](#organization-units)
+  - [Organization Unit Types](#organization-unit-types)
+  - [Organization Initiatives](#organization-initiatives)
+  - [Clearance Levels](#clearance-levels)
+  - [Grade Ranks](#grade-ranks)
+  - [Pay Grades](#pay-grades)
+  - [Job Series](#job-series)
+- [Places](#places)
+  - [Countries](#countries)
+  - [States or Provinces](#states-or-provinces)
+  - [Locations](#locations)
+  - [Fiscal Periods](#fiscal-periods)
+  - [Products](#products)
+  - [Privacy Consents](#privacy-consents)
+- [Legal and Compliance](#legal-and-compliance)
+  - [Legal Authorities](#legal-authorities)
+  - [Analyses](#analyses)
+  - [Impacts](#impacts)
+  - [Risk Items](#risk-items)
+  - [Compliance Frameworks](#compliance-frameworks)
+  - [Compliance Framework Categories](#compliance-framework-categories)
+  - [Compliance Requirements](#compliance-requirements)
+- [Summary](#summary)
+- [Sample data](#sample-data)
+
 # Walkthrough
 ---
 
