@@ -1,0 +1,9 @@
+site_name: Gov AppTemplates Docs
+nav:
+  - Home: ../README.md
+  - Core Module:
+      - Overview: ../federal/core/docs/readme.md
+      - Model-Driven App: ../federal/core/docs/model-driven-app.md
+  - Process & Tasking:
+      - Overview: ../federal/process-and-tasking/docs/readme.md
+docs_dir: github-pages/docs  # You can leave this empty or use for custom pages
