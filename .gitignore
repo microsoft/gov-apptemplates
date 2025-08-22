@@ -5,7 +5,7 @@
 
 .venv
 docs 
-.github
+.github/
 
 # User-specific files
 *.rsuser
