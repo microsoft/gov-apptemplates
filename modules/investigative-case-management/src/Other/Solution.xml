@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.25083.183" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25083.183" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25084.00181">
+<ImportExportXml version="9.2.25112.175" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25112.175" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25112.00175">
   <SolutionManifest>
     <UniqueName>msgov_investigativecasemanagement</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Microsoft Gov - Investigative Case Management" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.1.0.0</Version>
+    <Version>1.1.1.0</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>msgovsolutions</UniqueName>
@@ -14,12 +14,12 @@
         <LocalizedName description="Microsoft Government Solutions" languagecode="1033" />
       </LocalizedNames>
       <Descriptions>
-        <Description description="Microsoft Government Solutions" languagecode="1033" />
+        <Description description="msgovsolutions" languagecode="1033" />
       </Descriptions>
       <EMailAddress xsi:nil="true"></EMailAddress>
       <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
       <CustomizationPrefix>msgov</CustomizationPrefix>
-      <CustomizationOptionValuePrefix>18844</CustomizationOptionValuePrefix>
+      <CustomizationOptionValuePrefix>38751</CustomizationOptionValuePrefix>
       <Addresses>
         <Address>
           <AddressNumber>1</AddressNumber>
@@ -91,7 +91,6 @@
       <RootComponent type="1" schemaName="govcdm_icmviolation" behavior="2" />
       <RootComponent type="1" schemaName="msgov_icmleadtoicmcase" behavior="0" />
       <RootComponent type="29" id="{8ab9e6bb-5fab-ef11-b8e9-001dd804c7ab}" behavior="0" />
-      <RootComponent type="300" schemaName="msgov_icmcopilot_7b369" behavior="0" />
       <RootComponent type="62" schemaName="msgov_InvestigativeCaseManagement" behavior="0" />
       <RootComponent type="80" schemaName="msgov_InvestigativeCaseManagement" behavior="0" />
     </RootComponents>
@@ -105,52 +104,16 @@
         <Dependent type="1" schemaName="govcdm_icmcasecontact" displayName="ICM Case Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmcasecontact" displayName="ICM Case Contact" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="60" displayName="Information" parentDisplayName="ICM Case" id="{436413f2-28eb-4f86-81cf-8029f214dcf0}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmcasecontact" displayName="ICM Case Contact" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="60" displayName="Quick Create (Deprecated)" parentDisplayName="ICM Case Contact" id="{727aa925-80f7-ee11-a1fd-6045bddc9197}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmcasecontact" displayName="ICM Case Contact" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="80" schemaName="msgov_InvestigativeCaseManagement" displayName="Investigative Case Management" />
-      </MissingDependency>
-      <MissingDependency>
         <Required type="1" schemaName="govcdm_icmcasecontactviolation" displayName="ICM Case Contact Violation" solution="govcdm_investigations (1.0.0.1)" />
         <Dependent type="1" schemaName="govcdm_icmcasecontactviolation" displayName="ICM Case Contact Violation" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmcasecontactviolation" displayName="ICM Case Contact Violation" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="60" displayName="Main" parentDisplayName="ICM Case Contact Violation" id="{09dc41d0-7cf7-ee11-a1fd-6045bddc9197}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmcasecontactviolation" displayName="ICM Case Contact Violation" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="80" schemaName="msgov_InvestigativeCaseManagement" displayName="Investigative Case Management" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="govcdm_icmcaseevidence" displayName="ICM Case Evidence" solution="govcdm_investigations (1.0.0.1)" />
         <Dependent type="1" schemaName="govcdm_icmcaseevidence" displayName="ICM Case Evidence" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmcaseevidence" displayName="ICM Case Evidence" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="60" displayName="Main" parentDisplayName="ICM Case Evidence" id="{a55660f1-7cf7-ee11-a1fd-6045bddc9197}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmcaseevidence" displayName="ICM Case Evidence" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="80" schemaName="msgov_InvestigativeCaseManagement" displayName="Investigative Case Management" />
-      </MissingDependency>
-      <MissingDependency>
         <Required type="1" schemaName="govcdm_icmcaseviolation" displayName="ICM Case Violation" solution="govcdm_investigations (1.0.0.1)" />
         <Dependent type="1" schemaName="govcdm_icmcaseviolation" displayName="ICM Case Violation" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmcaseviolation" displayName="ICM Case Violation" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="60" displayName="Main" parentDisplayName="ICM Case Violation" id="{b719db0c-7df7-ee11-a1fd-6045bddc9197}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmcaseviolation" displayName="ICM Case Violation" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="80" schemaName="msgov_InvestigativeCaseManagement" displayName="Investigative Case Management" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="govcdm_icmevidence" displayName="ICM Evidence" solution="govcdm_investigations (1.0.0.1)" />
@@ -165,66 +128,12 @@
         <Dependent type="1" schemaName="govcdm_icmlead" displayName="ICM Lead" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmlead" displayName="ICM Lead" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="26" schemaName="Inactive ICM Lead to ICM Case on my ICM Leads" displayName="Inactive ICM Lead to ICM Case on my ICM Leads" parentSchemaName="msgov_icmleadtoicmcase" parentDisplayName="ICM Lead to ICM Case" id="{6147cba0-03d7-4782-9a64-66db12bab877}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmlead" displayName="ICM Lead" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="26" schemaName="Active ICM Lead to ICM Case on my ICM Leads" displayName="Active ICM Lead to ICM Case on my ICM Leads" parentSchemaName="msgov_icmleadtoicmcase" parentDisplayName="ICM Lead to ICM Case" id="{ccfda80e-a467-44ba-8170-518034c749b8}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmlead" displayName="ICM Lead" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="29" displayName="ICM Lead to ICM Case" id="{8ab9e6bb-5fab-ef11-b8e9-001dd804c7ab}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmlead" displayName="ICM Lead" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="60" displayName="Main" parentDisplayName="ICM Lead" id="{4b517d47-7df7-ee11-a1fd-6045bddc9197}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmlead" displayName="ICM Lead" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="62" schemaName="msgov_InvestigativeCaseManagement" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmlead" displayName="ICM Lead" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="80" schemaName="msgov_InvestigativeCaseManagement" displayName="Investigative Case Management" />
-      </MissingDependency>
-      <MissingDependency>
         <Required type="1" schemaName="govcdm_icmreferral" displayName="ICM Referral" solution="govcdm_investigations (1.0.0.1)" />
         <Dependent type="1" schemaName="govcdm_icmreferral" displayName="ICM Referral" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmreferral" displayName="ICM Referral" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="60" displayName="Main" parentDisplayName="ICM Referral" id="{ae3d9f64-7df7-ee11-a1fd-6045bddc9197}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmreferral" displayName="ICM Referral" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="62" schemaName="msgov_InvestigativeCaseManagement" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmreferral" displayName="ICM Referral" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="80" schemaName="msgov_InvestigativeCaseManagement" displayName="Investigative Case Management" />
-      </MissingDependency>
-      <MissingDependency>
         <Required type="1" schemaName="govcdm_icmviolation" displayName="ICM Violation" solution="govcdm_investigations (1.0.0.1)" />
         <Dependent type="1" schemaName="govcdm_icmviolation" displayName="ICM Violation" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmviolation" displayName="ICM Violation" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="60" displayName="Main" parentDisplayName="ICM Violation" id="{27cb777b-7df7-ee11-a1fd-6045bddc9197}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmviolation" displayName="ICM Violation" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="62" schemaName="msgov_InvestigativeCaseManagement" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="govcdm_icmviolation" displayName="ICM Violation" solution="govcdm_investigations (1.0.0.1)" />
-        <Dependent type="80" schemaName="msgov_InvestigativeCaseManagement" displayName="Investigative Case Management" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_aimodel" displayName="AI Model" solution="msdyn_AISolution (202507.4.22.2)">
-          <package appName="PowerAI" version="202507.4.22.2">msdyn_AISolutionAnchor (202507.4.22.2)</package>
-        </Required>
-        <Dependent type="300" schemaName="msgov_icmcopilot_7b369" displayName="ICM Copilot" />
       </MissingDependency>
       <MissingDependency>
         <Required type="10" schemaName="govcdm_icmcase_JudicialDistrict_govcdm_judicialdistrict" displayName="govcdm_icmcase_JudicialDistrict_govcdm_judicialdistrict" parentSchemaName="govcdm_judicialdistrict" parentDisplayName="Judicial District" solution="govcdm_investigations (1.0.0.1)" />
@@ -951,11 +860,11 @@
         <Dependent type="26" schemaName="Active ICM Violations" displayName="Active ICM Violations" parentSchemaName="govcdm_icmviolation" parentDisplayName="ICM Violation" id="{01178a83-30bf-4d4c-aac2-a272a54078d9}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="300" schemaName="msgov_assistantpage_7e2a6" displayName="Assistant Page" solution="msgov_processandtasking (1.1.0.0)" />
+        <Required type="300" schemaName="msgov_assistantpage_7e2a6" displayName="Assistant Page" solution="msgov_processandtasking (1.1.2.0)" />
         <Dependent type="62" schemaName="msgov_InvestigativeCaseManagement" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="300" schemaName="msgov_assistantpage_7e2a6" displayName="Assistant Page" solution="msgov_processandtasking (1.1.0.0)" />
+        <Required type="300" schemaName="msgov_assistantpage_7e2a6" displayName="Assistant Page" solution="msgov_processandtasking (1.1.2.0)" />
         <Dependent type="AppElement" displayName="msgov_msgov_InvestigativeCaseManagement_canvasappid_msgov_assistantpage_7e2a6" id.uniquename="msgov_msgov_InvestigativeCaseManagement_canvasappid_msgov_assistantpage_7e2a6" />
       </MissingDependency>
       <MissingDependency>
@@ -997,27 +906,17 @@
         <Dependent type="80" schemaName="msgov_InvestigativeCaseManagement" displayName="Investigative Case Management" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="msgov_processandtasking" displayName="msgov_processandtasking" solution="msgov_processandtasking (1.1.0.0)" />
+        <Required type="61" schemaName="msgov_processandtasking" displayName="msgov_processandtasking" solution="msgov_processandtasking (1.1.2.0)" />
         <Dependent type="60" displayName="Information" parentDisplayName="ICM Case" id="{436413f2-28eb-4f86-81cf-8029f214dcf0}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="msfed_MicrosoftPCF.IFrameControl" displayName="msfed_MicrosoftPCF.IFrameControl" solution="msfed_pcfiframe (1.0.0.1)" />
-        <Dependent type="300" schemaName="msgov_icmcopilot_7b369" displayName="ICM Copilot" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="66" schemaName="PowerApps.Copilot" displayName="PowerApps.Copilot" solution="BaseCustomControlsCore (9.0.2508.3010)">
-          <package appName="Base Custom Controls" version="9.0.2508.3010">BaseCustomControlsCore (9.0.2508.3010)</package>
-        </Required>
-        <Dependent type="300" schemaName="msgov_icmcopilot_7b369" displayName="ICM Copilot" />
-      </MissingDependency>
-      <MissingDependency>
         <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.15)" id.uniquename="AppChannel">
-          <package appName="PowerAppsAppFramework Package" version="1.0.0.22">PowerAppsAppFramework_Anchor (1.0.0.22)</package>
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.23">PowerAppsAppFramework_Anchor (1.0.0.23)</package>
         </Required>
         <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=msgov_InvestigativeCaseManagement,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="msgov_InvestigativeCaseManagement" id.settingdefinitionid.uniquename="AppChannel" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="SettingDefinition" displayName="appcopilotenabled" solution="msdyn_AppCopilotAppInfraSettings (9.2.2025062.250606027)" id.uniquename="appcopilotenabled">
+        <Required type="SettingDefinition" displayName="appcopilotenabled" solution="msdyn_AppCopilotAppInfraSettings (9.2.2025103.251015039)" id.uniquename="appcopilotenabled">
           <package appName="PowerAppsAppCopilotApp Package" version="1.0.0.2">msdyn_SuggestedAction (1.0.0.2)</package>
         </Required>
         <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=msgov_InvestigativeCaseManagement,settingdefinitionid.uniquename=appcopilotenabled" id.parentappmoduleid.uniquename="msgov_InvestigativeCaseManagement" id.settingdefinitionid.uniquename="appcopilotenabled" />

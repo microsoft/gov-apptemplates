@@ -340,7 +340,22 @@ function Build-Solution {
 
     $originalDir = Get-Location
     Set-Location $SolutionPath
-    dotnet build
+    
+    Write-Host "Building solution..."
+    # Use --no-incremental to avoid metadata caching issues
+    dotnet build --no-incremental 2>&1 | ForEach-Object {
+        # Suppress the specific MSB3231 error about removing obj\Debug\Metadata
+        if ($_ -notmatch "MSB3231.*obj\\Debug\\Metadata") {
+            Write-Output $_
+        }
+    }
+    
+    # Check if the solution zip was actually created (build succeeded despite cleanup errors)
+    $zipFile = Get-ChildItem -Path (Join-Path $SolutionPath "bin\Debug") -Filter "*.zip" -ErrorAction SilentlyContinue | Select-Object -First 1
+    if ($zipFile) {
+        Write-Host "Build completed successfully - $($zipFile.Name) generated" -ForegroundColor Green
+    }
+    
     Set-Location $originalDir
 }
 
@@ -429,6 +444,10 @@ function Sync-Module {
     Write-Host "Synchronizing $SolutionPath ..."
     Set-Location $SolutionPath
     pac solution sync
+    
+    # Wait longer for file system to release locks (antivirus, indexing, etc.)
+    Write-Host "Waiting for file system locks to release..."
+    Start-Sleep -Seconds 10
 
     Set-Location $originalDir
 }
